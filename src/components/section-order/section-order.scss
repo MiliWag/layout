@@ -40,12 +40,9 @@
         max-width: 14px;
         display: inline-flex;
     }
-    .button-order a:hover {
+    &:hover {
         text-decoration: none;
         color: $color-secondary;
         background-color: $color-white;
-        .arrow-right-white {
-            color: $color-secondary;
-        }
     }
 }

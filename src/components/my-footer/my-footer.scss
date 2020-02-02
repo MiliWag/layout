@@ -1,0 +1,29 @@
+.second-footer {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    padding: 40px;
+    box-shadow: 0 -1px 0 0 #3d435c;
+    background-color: $color-black;
+    color: $color-white;
+    font-family: $font-family-secondary;
+    font-size: $small-text-font-size;
+    .footer-copyright {
+        opacity: 0.25;
+    }
+    .up {
+        color: $color-white;
+        opacity: 0.25;
+        &:hover {
+            text-decoration: underline;
+            background-color: none;
+        }
+    }
+    .circle-arrow-bottom {
+        transform: rotate(180deg);
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 8px;
+    }
+}

@@ -42,11 +42,15 @@
             max-width: 14px;
             display: inline-flex;
         }
-    }
-    a:hover {
-        text-decoration: none;
-        color: $color-white;
-        background: #ff1a1a;
+        &:hover {
+            text-decoration: none;
+            color: $color-white;
+            background: #eb1111;
+        }
+        &:visited {
+            text-decoration: underline;
+            color: $color-white;
+        }
     }
     .hp-intro {
         height: 570px;

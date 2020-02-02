@@ -23,19 +23,21 @@
         padding: 30px;
         margin-left: 10px;
     }
+    .point {
+        display: inline-block;
+        width: 54px;
+        height: 54px;
+        border-radius: 27px;
+        padding: 16px;
+        text-align: center;
+        background-color: $color-primary;
+        background: linear-gradient(135deg, $color-primary, $color-gradient);
+        color: $color-white;
+    }
     h3 {
         color: $color-secondary;
         font-family: $font-family-primary;
         font-size: $article-heading-font-size;
-        span {
-            background-color: $color-primary;
-            background: linear-gradient(135deg, $color-primary, $color-gradient);
-            color: $color-white;
-            width: 54px;
-            height: 54px;
-            border-radius: 27px;
-            padding: 10px;
-        }
         p {
             font-size: $small-text-font-size;
             font-family: $font-family-secondary;
