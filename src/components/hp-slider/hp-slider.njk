@@ -1,0 +1,45 @@
+{% from "hp-slider/hp-slider-item.njk" import sliderItem %}
+{% include "hp-slider/hp-slider-item.njk"%}
+{# @@utilityClass: TBD - TO BE DECIDED  #}
+
+{% set sliderItems = [
+  {
+    title: 'Google',
+    perex: 'http://google.com',
+    buttonText: 'A search engine',
+    utilityClass: 'A search engine',
+    imgSrc: 'A search engine'
+
+  }, {
+    title: 'GitHub',
+    perex: 'http://github.com',
+    buttonText: 'A webapp for your git repos',
+    utilityClass: 'A search engine',
+    imgSrc: 'A search engine'
+  }, {
+    title: 'StackOverflow',
+    perex: 'http://stackoverflow.com',
+    buttonText: 'The answer: 42',
+    utilityClass: 'A search engine',
+    imgSrc: 'A search engine'
+  }
+] %}
+
+<section class="hp-slider-section @@utilityClass">
+
+  <div class="hp-slider">
+    {% for slider in sliderItems %}
+
+      {{sliderItem(slider.title,slider.perex,slider.buttonText,slider.utilityClass,slider.imgSrc)}}
+
+    {% endfor %}
+
+  </div>
+
+  <div class="container">
+    <div class="hp-slider-buttons">
+      <span class="hp-slider-arrow hp-slider-prev"><img src="images/ico/arrow.svg" alt=""></span>
+      <span class="hp-slider-arrow hp-slider-next"><img src="images/ico/arrow.svg" alt=""></span>
+    </div>
+  </div>
+</section>

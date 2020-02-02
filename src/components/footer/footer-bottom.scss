@@ -1,0 +1,141 @@
+//Footer bottom
+.footer-bottom {
+	background: $footer-bottom-bg-color;
+	color: $footer-bottom-text-color;
+
+	.container {
+		min-height: $baseline * 2;
+		display: flex;
+		align-items: center;
+		padding-top: $baseline * 1.5;
+		padding-bottom: $baseline * 1.5;
+	}
+}
+
+//Footer copy
+.footer-copy {
+	display: block;
+	flex-grow: 1;
+	padding-right: $baseline;
+	font-size: $footer-bottom-font-size;
+}
+
+//Footer bottom nav
+.footer-bottom-nav {
+	flex-grow: 1;
+	padding: 0 $baseline;
+	text-align: center;
+	font-size: $footer-bottom-font-size;
+
+	&:last-child {
+		ul {
+			justify-content: flex-end;
+		}
+	}
+
+	ul {
+		display: flex;
+	}
+
+	li {
+		margin-right: 30px;
+		position: relative;
+		display: flex;
+		align-items: center;
+
+		&:last-child {
+			margin-right: 0;
+
+			&:after {
+				display: none;
+			}
+		}
+
+		&::after {
+			content: "";
+			background: $footer-bottom-nav-text-color;
+			display: block;
+			position: absolute;
+			top: 50%;
+			right: -15px;
+			width: 1px;
+			height: $footer-bottom-font-size + 3px;
+			transform: translateY(-50%);
+		}
+	}
+
+	a {
+		color: $footer-bottom-nav-text-color;
+
+		cursor: pointer;
+	}
+}
+
+//Up to tablet landscape - up to 1199px
+@media (max-width: map-get($grid-breakpoints, xl) - 1px) {
+	//Footer bottom
+	.footer-bottom {
+		padding: $baseline * 0.5 0;
+
+		.container {
+			flex-wrap: wrap;
+		}
+	}
+
+	.footer-copy {
+		width: 100%;
+		text-align: center;
+		margin-bottom: $baseline;
+		padding: 0;
+	}
+
+	.footer-bottom-nav {
+		width: 100%;
+		margin-bottom: $baseline;
+		padding: 0;
+
+		ul {
+			justify-content: center;
+		}
+	}
+
+	.footer-bottom-social {
+		justify-content: center;
+		width: 100%;
+	}
+}
+
+//Phone portrait - up to 575px
+@media (max-width: map-get($grid-breakpoints, sm) - 1px) {
+	//Footer bottom
+	.footer-bottom {
+		.container {
+			text-align: center;
+			justify-content: center;
+		}
+	}
+
+	.footer-copy {
+		width: 100%;
+	}
+
+	.footer-bottom-nav {
+		ul {
+			flex-direction: column;
+		}
+
+		li {
+			justify-content: center;
+			margin-right: 0;
+			margin-bottom: $baseline * 0.5;
+
+			&::after {
+				display: none;
+			}
+		}
+
+		a {
+			text-decoration: underline;
+		}
+	}
+}

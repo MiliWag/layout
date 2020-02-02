@@ -1,0 +1,34 @@
+div.validator {
+	height: 0;
+	position: relative;
+
+	>span.erorr-s {
+		position: absolute;
+		padding: 2px 6px;
+		padding-bottom: 0;
+		display: block;
+		left: 0;
+		top: 0;
+		white-space: nowrap;
+		border-radius: 3px;
+		color: #fff;
+		font-family: verdana;
+		letter-spacing: -1px;
+		font-size: 12px;
+		background: #c92a2a;
+		z-index: 98;
+
+		&:after {
+			content: "";
+			display: block;
+			width: 0;
+			height: 0;
+			position: absolute;
+			top: -5px;
+			left: 10px;
+			border-style: solid;
+			border-width: 0 5px 10px 5px;
+			border-color: transparent transparent #c92a2a transparent;
+		}
+	}
+}

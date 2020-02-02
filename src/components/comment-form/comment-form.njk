@@ -1,0 +1,26 @@
+<div id="respond" class="comment-respond">
+	<h3 id="reply-title" class="comment-reply-title">Napsat komentář <small><a rel="nofollow" id="cancel-comment-reply-link" href="/brilotheme/byli-jsme-na-koncertu-a-hudba-hrala-dost-nahlas/#respond" style="display:none;">Zrušit odpověď na komentář</a></small></h3>
+	<form action="http://localhost/brilotheme/wp-comments-post.php" method="post" id="commentform" class="comment-form" data-validate="jquery">
+		<p class="comment-notes"><span id="email-notes">Vaše emailová adresa nebude zveřejněna.</span> Vyžadované informace jsou označeny <span class="required">*</span></p>
+		<p class="comment-form-comment">
+			<label for="comment">Komentář</label>
+			<textarea id="comment" placeholder="Komentář *" name="comment" cols="45" rows="8" maxlength="65525" required="required" data-validators="[{&quot;condition&quot;:&quot;required&quot;,&quot;msg&quot;:&quot;E-mail je povinn\u00e1 polo\u017eka&quot;,&quot;params&quot;:null},{&quot;condition&quot;:&quot;email&quot;,&quot;msg&quot;:&quot;Chybn\u00fd tvar e-mailov\u00e9 adresy&quot;,&quot;params&quot;:null},{&quot;condition&quot;:&quot;maxLength&quot;,&quot;msg&quot;:&quot;E-mail m\u016f\u017ee m\u00edt maxim\u00e1ln\u011b 100 znak\u016f&quot;,&quot;params&quot;:100}]"></textarea>
+		</p>
+		<p class="comment-form-author">
+			<label for="author">Jméno <span class="required">*</span></label>
+			<input id="author" name="author" placeholder="Jméno *" data-validators="[{&quot;condition&quot;:&quot;required&quot;,&quot;msg&quot;:&quot;Jm\u00e9no je povinn\u00e1 polo\u017eka&quot;,&quot;params&quot;:null}]" type="text" value="" size="30" maxlength="245" required="required">
+		</p>
+		<p class="comment-form-email">
+			<label for="email">Email <span class="required">*</span></label>
+			<input id="email" name="email" placeholder="E-mail *" data-validators="[{&quot;condition&quot;:&quot;required&quot;,&quot;msg&quot;:&quot;E-mail je povinn\u00e1 polo\u017eka&quot;,&quot;params&quot;:null},{&quot;condition&quot;:&quot;email&quot;,&quot;msg&quot;:&quot;E-mail je povinn\u00e1 polo\u017eka&quot;,&quot;params&quot;:null}]" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required">
+		</p>
+		<p class="comment-form-url">
+			<label for="url">Webová stránka</label>
+			<input id="url" name="url" placeholder="URL" type="url" value="" size="30" maxlength="200">
+		</p>
+		<p class="form-submit"><span id="submit" class="btn submitButton"><span>Odeslat komentář</span></span>
+			<input type="hidden" name="comment_post_ID" value="103" id="comment_post_ID">
+			<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+		</p>
+	</form>
+</div>

@@ -1,0 +1,104 @@
+//Pagination
+.pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: $baseline * 2;
+
+  li {
+    left: 0;
+
+    &.dots {
+      span {
+        box-shadow: none;
+        color: $color-text;
+        background: transparent;
+        cursor: default;
+
+        &:hover {
+          background: none;
+          color: $color-text;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &.active {
+      span {
+        color: $pagination-active-text-color;
+
+        cursor: default;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &.prev,
+    &.next {
+
+
+      a {
+        padding: 0;
+        width: $baseline;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        img {
+          height: 18px;
+          width: 18px;
+        }
+      }
+    }
+
+    &.prev {
+      margin-left: 0;
+      margin-right: 5px;
+
+      a {
+        img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  a,
+  span {
+    color: $pagination-text-color;
+    font-size: $pagination-font-size;
+    background: $pagination-bg-color;
+
+    font-weight: 400;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    margin: 0 2px;
+
+    height: $baseline;
+
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    user-select: none;
+    z-index: 2;
+    cursor: pointer;
+
+    transition: color 0.2s;
+
+    &:hover {
+      color: $pagination-text-color-hover;
+      text-decoration: underline;
+    }
+  }
+}

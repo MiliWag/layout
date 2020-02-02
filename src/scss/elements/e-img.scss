@@ -1,0 +1,19 @@
+img {
+	display: block;
+	-ms-interpolation-mode: bicubic;
+	opacity: 1;
+	transition: opacity 0.3s ease;
+	height: auto;
+	max-width: 100%;
+
+	&[data-src]:not(.loaded) {
+		opacity: 0;
+	}
+
+	&[data-src],
+	&[data-srcset] {
+		display: block;
+		min-height: 1px;
+		min-width: 1px;
+	}
+}

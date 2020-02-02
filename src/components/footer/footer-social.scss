@@ -1,0 +1,39 @@
+//Footer social
+.footer-social {
+	display: flex;
+	justify-content: center;
+	min-height: $baseline * 1;
+	align-items: center;
+
+	a {
+		height: $baseline;
+		width: $baseline;
+		margin: 0 6px;
+		box-shadow: 0 0 0 1px $footer-social-border-color;
+		border-radius: $footer-social-border-radius;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: 0.2s ease;
+
+		&:hover {
+			svg {
+				fill: $footer-social-ico-hover-color;
+			}
+		}
+	}
+
+	img,
+	svg {
+		transition: filter 0.2s;
+		width: 16px;
+		height: 16px;
+		margin-bottom: 0;
+	}
+
+	svg {
+		fill: $footer-social-ico-color;
+		transition: fill 0.2s;
+	}
+}

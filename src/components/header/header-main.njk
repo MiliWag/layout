@@ -1,0 +1,55 @@
+<header class="header-main">
+	<div class="container">
+		<a class="header-brand" href="#">
+			<img src="images/ico/brilo-logo.svg" alt="" draggable="false" />
+		</a>
+
+		<nav class="nav-main">
+			<ul>
+				<li class="nav-home">
+					<a href="#">
+          
+          {% include "../../../build/images/ico/home.svg" %}
+						
+						<span>
+							Úvod
+						</span>
+					</a>
+				</li>
+
+				<li class="menu-item-has-children current-menu-ancestor"><a href="#">Sortiment</a>
+					<ul class="sub-menu">
+						<li><a href="#">Položka druhé úrovně</a></li>
+						<li><a href="#">Taky položka</a></li>
+						<li><a href="#">OMG a další</a></li>
+						<li class="menu-item-has-children current-menu-item-parent current-menu-ancestor"><a href="#">A já mám i submenu</a>
+							<ul class="sub-menu">
+								<li><a href="#">Last level</a></li>
+								<li class="current-menu-item"><a href="#">Friggin (curernt menu item)</a></li>
+								<li><a href="#">Last motherflippin level</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Poslední položka</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Info</a></li>
+				<li><a href="#">Reference</a></li>
+				<li><a href="#">O nás</a></li>
+				<li><a href="#">Kontakty</a></li>
+			</ul>
+		</nav>
+{% include "header/header-search-form.njk" %}
+	
+{# {% include "header/header-language-switcher.njk" %} #}
+	
+
+		<div class="header-nav-button">
+			menu
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="header-mask"></div>
+</header>

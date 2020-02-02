@@ -1,0 +1,31 @@
+{# {% from "hp-slider/hp-slider-item.njk" import breadcrumbsItem %}
+
+{% set breadcrumbsItems = [
+  {
+    subpageFirstText: 'Google',
+    subpageText: 'http://google.com',
+    currentPageText: 'A search engine'
+  }
+] %} #}
+
+<!DOCTYPE html>
+<html lang="cs">
+  {% include "header/header-head.njk" %}
+
+  <!-- @@bodyClass: home -->
+
+  <body class="@@bodyClass">
+    {% include "header/header-main.njk" %}
+
+    <main>
+      {# {% include "project-notices/project-notices.njk" %} #}
+
+      {# {% include "breadcrumbs/breadcrumbs.njk" %}
+      {# {% for breadcrumbs in breadcrumbsItems %}
+
+        {{sliderItem(breadcrumbs.subpageFirstText,breadcrumbs. subpageText,breadcrumbs.currentPageText)}}
+
+      {% endfor %} #}
+
+      {# {% include "breadcrumbs/breadcrumbs-last-only.njk" %}
+      {% include "breadcrumbs/breadcrumbs-two-subpages.njk" %} #}

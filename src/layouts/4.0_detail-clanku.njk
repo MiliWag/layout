@@ -1,0 +1,43 @@
+{% extends "layout-base/layout-base.njk" %}
+
+{% block main %}
+
+  @@include('../../../components/breadcrumbs/breadcrumbs.html',{ "subpageText": "Subpage", "currentPageText": "Current page" })
+
+  <div class="container">
+    <div class="row">
+      <section class="col-lg-9">
+
+        @@include('../../../components/post-detail-header/post-detail-header.html')
+
+        <div class="entry-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <a href="#">Aliquam</a>
+            at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.<strong>Lorem ipsum</strong>
+            dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.
+          </p>
+
+          <h2>Nadpis druhé úrovně</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta cum odio ipsam quidem nulla. Reiciendis eum magni aperiam nemo ipsum, vero nisi nihil ullam. Eius adipisci corporis, consequatur eaque incidunt nemo repellendus pariatur dolorum molestiae aperiam dolor laborum sit optio deserunt nostrum blanditiis dolorem labore architecto nesciunt eum, beatae est.</p>
+
+          <blockquote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quae praesentium, soluta esse recusandae et amet deserunt odio libero neque temporibus voluptatum natus enim at iste in voluptatem architecto velit adipisci commodi est nihil labore. Earum, quo iure. Ipsa quaerat blanditiis deserunt fugit voluptatum quasi impedit a recusandae ea sequi.
+          </blockquote>
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta cum odio ipsam quidem nulla. Reiciendis eum magni aperiam nemo ipsum, vero nisi nihil ullam. Eius adipisci corporis, consequatur eaque incidunt nemo repellendus pariatur dolorum molestiae aperiam dolor laborum sit optio deserunt nostrum blanditiis dolorem labore architecto nesciunt eum, beatae est.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta cum odio ipsam quidem nulla. Reiciendis eum magni aperiam nemo ipsum, vero nisi nihil ullam. Eius adipisci corporis, consequatur eaque incidunt nemo repellendus pariatur dolorum molestiae aperiam dolor laborum sit optio deserunt nostrum blanditiis dolorem labore architecto nesciunt eum, beatae est.</p>
+        </div>
+        {% include "post-share-section/post-share-section.njk" %}
+        {% include "post-author-section/post-author-section.njk" %}
+        {% include "related-posts-section/related-posts-section.njk" %}
+        {% include "post-comments-section/post-comments-section.njk" %}
+
+      </section>
+
+      {% include "aside/aside.njk" %}
+      {# @@include('../../../components/aside/aside.html',{ "utilityClass": "col-lg-3" }) #}
+    </div>
+  </div>
+
+{% endblock %}

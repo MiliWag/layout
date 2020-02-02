@@ -1,0 +1,91 @@
+.section-top-products {
+    h2 {
+        text-align: center;
+        font-size: $base-heading-font-size;
+        font-weight: bold;
+        line-height: 1.22;
+        color: $color-secondary;
+        font-family: $font-family-primary;
+        padding: 20px;
+        .header-orange {
+            color: $color-primary;
+        }
+    }
+    p {
+        max-width: 639px;
+        font-size: $small-text-font-size;
+        font-family: $font-family-secondary;
+        color: $color-secondary;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    h3 {
+        color: $color-primary;
+        font-family: $font-family-primary;
+        font-size: 22px;
+        font-weight: bold;
+        padding-top: 25px;
+    }
+    .stp-header {
+        margin-bottom: 80px;
+    }
+}
+
+.button-primary {
+    display: inline-block;
+    width: 239px;
+    height: 57px;
+    padding: 16px;
+    color: $color-white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    background-color: $color-primary;
+    background: linear-gradient(103deg, $color-primary, $color-gradient);
+    border-style: none;
+    border-radius: 2px;
+    box-shadow: 0 3px 8px 0 rgba(255, 77, 77, 0.4);
+    .arrow-right-white {
+        margin-left: 10px;
+        max-width: 14px;
+        display: inline-flex;
+    }
+}
+
+a:hover {
+    text-decoration: none;
+    color: $color-white;
+    background: #ff1a1a;
+}
+
+.container {
+    max-width: 1248px;
+    padding: 0;
+    p {
+        padding: 10px;
+    }
+}
+
+.col-sm {
+    text-align: center;
+    max-width: 295px;
+    height: 443.7px;
+    margin-right: 20px;
+    margin-bottom: 80px;
+    border: solid 1px #e5e5e5;
+    background-color: #ffffff;
+    position: relative;
+    .img-background {
+        width: 295px;
+        height: 182px;
+        margin-left: -16px;
+        margin-bottom: 16px;
+        background-image: linear-gradient(122deg, #f2f2f2, #d6d6d6);
+    }
+    .signpost-item {
+        position: absolute;
+        top: -38px;
+        left: 32px;
+    }
+}

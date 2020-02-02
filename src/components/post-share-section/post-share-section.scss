@@ -1,0 +1,51 @@
+//Post shrare section
+.post-share-section {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	padding-top: $baseline * 1.5;
+	padding-bottom: $baseline * 0.5;
+}
+
+//Post share heading
+.post-share-heading {
+	margin-right: 40px;
+	margin-bottom: $baseline;
+	transform: none;
+}
+
+//Post share platform
+.post-share-platforms {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: $baseline * 0.5;
+}
+
+//Post share link
+.post-share-link {
+	font-size: $smallest-text-font-size;
+	color: $color-text;
+
+	display: flex;
+	align-items: center;
+
+	margin-bottom: $baseline * 0.5;
+	margin-right: 12px;
+
+	background: $color-bg-01;
+	//box-shadow: inset 0 0 0 1px $color-bg-02;
+	padding: 0 5px;
+
+	&:hover {
+		text-decoration: none;
+		color: $color-primary;
+	}
+
+	img {
+		height: 13px;
+		width: 13px;
+		margin-right: 5px;
+	}
+}

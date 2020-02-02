@@ -1,0 +1,61 @@
+.breadcrumbs {
+	font-weight: $breadcrumbs-font-weight;
+	font-size: $breadcrumbs-font-size;
+
+	margin-top: $baseline;
+	margin-bottom: $baseline * 2;
+
+	a {
+		position: relative;
+		color: $breadcrumbs-link-text-color;
+		margin-right: 25px;
+		transition: color 0.3s ease;
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: -15px;
+			width: 5px;
+			height: 5px;
+
+			background-color: $breadcrumbs-link-text-color;
+
+			border-radius: $breadcrumbs-bullet-border-radius;
+		}
+
+		&:hover {
+			color: $breadcrumbs-link-text-color;
+			text-decoration: underline;
+		}
+	}
+
+	//Breadcrumbs home
+	& > span > span > a:first-child {
+		display: inline-block;
+		color: transparent;
+		width: $baseline * 0.7;
+		height: $baseline;
+		position: relative;
+		background-image: url("images/ico/home.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 14px;
+		user-select: none;
+	}
+}
+
+.breadcrumb-last {
+	color: $breadcrumbs-text-color;
+}
+
+// phone portrait - up to 768px
+@media (max-width: map-get($grid-breakpoints, md) - 1px) {
+	.breadcrumbs {
+		margin-top: 0;
+		margin-bottom: 0;
+		display: none;
+	}
+}

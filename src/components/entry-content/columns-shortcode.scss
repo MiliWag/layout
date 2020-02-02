@@ -1,0 +1,130 @@
+/* purgecss start ignore */
+.entry-content {
+	//* Columns ShortCodes styles
+	.columns-1 {
+		display: block;
+
+		.column {
+			display: block;
+		}
+	}
+
+	.columns-2 {
+		.column {
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+	}
+
+	.columns-3 {
+		.column {
+			flex: 0 0 33.3333333%;
+			max-width: 33.3333333%;
+		}
+	}
+
+	.columns-4 {
+		.column {
+			flex: 0 0 25%;
+			max-width: 25%;
+		}
+	}
+
+	.column {
+		position: relative;
+		width: 100%;
+		min-height: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: $baseline;
+
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+			float: none !important;
+		}
+	}
+}
+
+//* Breakpoints
+//Tablet landscape - from 992px up
+@media (min-width: map-get($grid-breakpoints, lg)) {
+	.entry-content {
+		.column {
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				&:first-of-type {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+
+//Tablet portrait - from 768px up
+@media (min-width: map-get($grid-breakpoints, md)) {
+	.entry-content {
+		.columns-4 {
+			.column {
+				h2,
+				h3,
+				h4,
+				h5,
+				h6 {
+					&:first-of-type {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+// up to 1200px
+@media (max-width: map-get($grid-breakpoints, xl) - 1px) {
+	.entry-content {
+		.columns-4 {
+			.column {
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+		}
+	}
+}
+
+// up to 992px
+@media (max-width: map-get($grid-breakpoints, lg) - 1px) {
+	.entry-content {
+		.columns-3,
+		.columns-2 {
+			display: block;
+
+			.column {
+				display: block;
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+// phone portrait - up to 575px
+@media (max-width: map-get($grid-breakpoints, md) - 1px) {
+	.entry-content {
+		.columns-2,
+		.columns-3,
+		.columns-4 {
+			display: block;
+
+			.column {
+				display: block;
+				max-width: 100%;
+			}
+		}
+	}
+}
+/* purgecss end ignore */

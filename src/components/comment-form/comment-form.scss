@@ -1,0 +1,177 @@
+//Comment reply title
+.comment-reply-title {
+	font-size: $base-text-font-size;
+	transform: translateY($base-text-offset);
+	font-weight: 700;
+
+	margin-bottom: $baseline;
+}
+
+//Comment form
+.comment-form {
+	box-shadow: 0 0 0 1px $comment-form-border-color;
+	padding: $baseline 40px;
+	padding-top: $baseline * 2;
+	background: $comment-form-bg-color;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: $comment-form-text-color;
+	margin-bottom: $baseline * 2;
+}
+
+//Comment form quote notice
+.comment-form-quote-notice {
+	width: 100%;
+	margin-bottom: $baseline;
+	position: relative;
+	padding-right: 30px;
+
+	span {
+		&:first-child {
+			font-weight: 700;
+		}
+
+		&:nth-child(2) {
+			font-style: italic;
+			color: $color-text;
+		}
+
+		&:last-child {
+			top: 0;
+			right: 0;
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			transform: rotate(45deg);
+
+			&:hover {
+				cursor: pointer;
+				&::before,
+				&::after {
+					background: $color-primary;
+				}
+			}
+
+			&::before,
+			&::after {
+				content: "";
+				display: block;
+				width: 100%;
+				height: 2px;
+				background: $color-text;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			&::after {
+				transform: translateY(-50%) rotate(90deg);
+			}
+		}
+	}
+}
+
+//Comment form author, email
+.comment-form-author,
+.comment-form-email {
+	width: calc(50% - 15px);
+	margin-bottom: $baseline * 2;
+	transform: none;
+
+	input {
+		width: 100%;
+		line-height: $baseline * 2;
+		height: $baseline * 2;
+		outline: none;
+		border: 0;
+		box-shadow: inset 0 0 0 1px$comment-form-border-color;
+		background: $comment-form-input-bg-color;
+		padding: 0 20px;
+
+		&::placeholder {
+			color: $comment-form-text-color;
+		}
+	}
+}
+
+//Comment form comment
+.comment-form-comment {
+	width: 100%;
+	order: 1;
+	transform: none;
+
+	textarea {
+		width: 100%;
+		resize: none;
+		height: $baseline * 10;
+		border: 0;
+		box-shadow: inset 0 0 0 1px$comment-form-border-color;
+		background: $comment-form-input-bg-color;
+		vertical-align: top;
+		outline: none;
+		padding: 10px 20px;
+
+		&::placeholder {
+			color: $comment-form-text-color;
+		}
+	}
+}
+
+//Comment notes
+.comment-notes {
+	order: 3;
+	width: 100%;
+}
+
+//Form submit
+.form-submit {
+	order: 3;
+	margin-left: auto;
+	margin-bottom: 0;
+	transform: none;
+}
+
+//Hide labels
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email {
+	label {
+		display: none;
+	}
+}
+
+.logged-in-as {
+	color: $link-text-color;
+	font-weight: 700;
+}
+
+.comment-form-url {
+	display: none;
+}
+
+// phone portrait - up to 575px
+@media (max-width: map-get($grid-breakpoints, sm) - 1px) {
+	//Comment form
+	.comment-form {
+		padding: $baseline 15px;
+	}
+
+	//Comment form author, email
+	.comment-form-author,
+	.comment-form-email {
+		width: 100%;
+		margin-bottom: $baseline;
+		transform: none;
+	}
+
+	//Comment notes
+	.comment-notes {
+		text-align: center;
+	}
+
+	//Form submit
+	.form-submit {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

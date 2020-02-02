@@ -1,0 +1,316 @@
+//Baseline
+$spacing: 8px;
+$baseline: $spacing * 3;
+//--------------------------------//
+//---------- COLORS -------------//
+//------------------------------//
+$color-white: #ffffff;
+$color-black: #252a41;
+$color-primary: #ff4d4d;
+$color-gradient: #ff7c4d;
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-dark: darken($color-primary, 10%);
+$color-primary-hover: $color-primary-light;
+$color-secondary: #313650;
+$color-secondary-light: lighten($color-secondary, 10%);
+$color-secondary-dark: darken($color-secondary, 10%);
+$color-secondary-hover: $color-secondary-dark;
+$color-text: #424356;
+$color-text-light: #7b7b7b;
+$color-bg-01: #f5f5f6;
+$color-bg-02: $color-primary-dark;
+$color-bg-03: #f0f0f0;
+//-------------------------------------//
+//---------- FONT FAMILY -------------//
+//-----------------------------------//
+//$font-family-primary: "Open Sans", sans-serif;
+//$font-family-primary: "Raleway", sans-serif;
+//$font-family-primary: "Roboto Slab", serif;
+//$font-family-primary: "Roboto", sans-serif;
+$font-family-primary: 'Cabin',
+sans-serif;
+$font-family-secondary: 'Hind',
+sans-serif;
+//------------------------------//
+//---------- TEXT -------------//
+//----------------------------//
+//HP heading
+$hp-heading-font-size: 60px;
+$hp-heading-offset: 14px;
+$hp-heading-line-height: $baseline * 3;
+$hp-heading-font-size-LG: 50px;
+$hp-heading-offset-LG: 6px;
+$hp-heading-line-height-LG: $baseline * 2;
+$hp-heading-font-size-SM: 40px;
+$hp-heading-offset-SM: 9px;
+$hp-heading-line-height-SM: $baseline * 2;
+//Base heading
+$base-heading-font-size: 45px;
+$base-heading-offset: 6px;
+$base-heading-line-height: $baseline * 2;
+$base-heading-font-size-LG: 35px;
+$base-heading-offset-LG: 9px;
+$base-heading-line-height-LG: $baseline * 2;
+$base-heading-font-size-SM: 22px;
+$base-heading-offset-SM: 3px;
+$base-heading-line-height-SM: $baseline * 1;
+//Base subheading
+$base-subheading-font-size: 30px;
+$base-subheading-offset: 12px;
+$base-subheading-line-height: $baseline * 2;
+$base-subheading-font-size-LG: 26px;
+$base-subheading-offset-LG: 2px;
+$base-subheading-line-height-LG: $baseline * 1;
+$base-subheading-font-size-SM: 22px;
+$base-subheading-offset-SM: 3px;
+$base-subheading-line-height-SM: $baseline * 1;
+//Article heading
+$article-heading-font-size: 24px;
+$article-heading-offset: 3px;
+$article-heading-line-height: $baseline * 1;
+$article-heading-font-size-LG: 22px;
+$article-heading-offset-LG: 3px;
+$article-heading-line-height-LG: $baseline * 1;
+$article-heading-font-size-SM: 22px;
+$article-heading-offset-SM: 3px;
+$article-heading-line-height-SM: $baseline * 1;
+//Base text
+$base-text-font-size: 18px;
+$base-text-offset: 5px;
+//Small text
+$small-text-font-size: 16px;
+$small-text-offset: 6px;
+//Smallest text
+$smallest-text-font-size: 14px;
+$smallest-text-offset: 6px;
+//------------------------------//
+//-------- DECORATIONS --------//
+//----------------------------//
+//Border radius
+$border-radius-base: 0px;
+//Box shadow
+$shadow-01: 0px 5px 30px 0 rgba(39, 44, 78, 0.09);
+$shadow-02: 0px 5px 25px 0 rgba(62, 57, 57, 0.3);
+//------------------------------//
+//---------- BUTTONS ----------//
+//----------------------------//
+//Button text
+$button-font-size: $small-text-font-size;
+$button-small-font-size: $small-text-font-size;
+//$button-large-font-size: $base-text-font-size;
+$button-large-font-size: $base-text-font-size;
+$button-font-weight: 700;
+$button-uppercase: true;
+//Button color
+$button-primary-bg-color: $color-primary;
+$button-primary-bg-color-hover: $color-primary-dark;
+$button-primary-text-color: $color-white;
+$button-primary-text-color-hover: $color-white;
+$button-secondary-bg-color: $color-secondary;
+$button-secondary-bg-color-hover: $color-secondary-hover;
+$button-secondary-text-color: $color-white;
+$button-secondary-text-color-hover: $color-white;
+$button-disabled-bg-color: #d3d3d3;
+$button-disabled-text-color: $color-text-light;
+$button-loading-text-color: $button-primary-text-color;
+$button-loading-bg-color-01: $color-primary;
+$button-loading-bg-color-02: $color-primary-dark;
+//Button size
+$button-min-widht: 200px;
+$button-small-min-widht: 150px;
+$button-large-min-widht: 230px;
+//Button misc
+//$button-border-radius: $border-radius-base;
+$button-border-radius: 3px;
+//-----------------------------//
+//---------- HEADER ----------//
+//---------------------------//
+$header-bg-color: $color-white;
+$header-bg-color-hover: transparent;
+$header-border-color: transparent;
+$header-nav-main-bg-color-MD: $color-white;
+$header-bg-color-hover-MD: $header-bg-color-hover;
+//Header brand
+$header-brand-img-height: $baseline * 2.4;
+//Header text
+$header-font-size: $small-text-font-size;
+$header-text-color: $color-text;
+$header-text-color-hover: $color-primary;
+$header-font-weight: 700;
+$header-font-size-MD: $header-font-size;
+$header-text-color-MD: $header-text-color;
+$header-text-color-hover-MD: $header-text-color-hover;
+$header-font-weight-MD: $header-font-weight;
+$header-line-color-MD: $header-border-color;
+//Header nav button
+$header-nav-button-color: $color-primary;
+//Submenu
+$sub-menu-bg-color: $color-white;
+$sub-menu-bg-color-hover: transparent;
+$sub-menu-text-color: $header-text-color;
+$sub-menu-text-color-hover: $header-text-color-hover;
+$sub-menu-line-color: $color-bg-01;
+$sub-menu-bg-color-MD: $color-bg-01;
+$sub-menu-bg-color-hover-MD: $sub-menu-bg-color-hover;
+$sub-menu-text-color-MD: $sub-menu-text-color;
+$sub-menu-text-color-hover-MD: $sub-menu-text-color-hover;
+$sub-menu-line-color-MD: $color-bg-01;
+//Sub menu sub menu
+$sub-sub-menu-bg-color: $sub-menu-bg-color;
+$sub-sub-menu-bg-color-hover: $sub-menu-bg-color-hover;
+$sub-sub-menu-text-color: $sub-menu-text-color;
+$sub-sub-menu-text-color-hover: $sub-menu-text-color-hover;
+$sub-sub-menu-line-color: $sub-menu-line-color;
+$sub-sub-menu-bg-color-MD: $color-white;
+$sub-sub-menu-bg-color-hover-MD: $sub-sub-menu-bg-color-hover;
+$sub-sub-menu-text-color-MD: $sub-sub-menu-text-color;
+$sub-sub-menu-text-color-hover-MD: $sub-sub-menu-text-color-hover;
+$sub-sub-menu-line-color-MD: $color-bg-01;
+//Header search
+$header-search-button-color: $color-primary;
+$header-search-button-color-hover: $header-text-color-hover;
+$header-search-border-radius: 6px;
+$header-search-input-bg-color: $color-bg-01;
+//----------------------------//
+//---------- LINKS ----------//
+//--------------------------//
+//Links
+$link-text-color: $color-primary;
+//-----------------------------//
+//---------- FOOTER ----------//
+//---------------------------//
+$footer-bg-color: transparent;
+//Footer top
+$footer-top-font-size: $base-text-font-size;
+$footer-top-text-offset: $base-text-offset;
+$footer-top-bg-color: $color-white;
+$footer-top-border-color: $color-bg-01;
+$footer-top-text-color: $color-text;
+//Footer brand
+$footer-brand-img-height: $baseline * 3;
+$footer-brand-font-size: $base-text-font-size;
+$footer-brand-text-offset: $base-text-offset;
+$footer-brand-text-color: $color-text-light;
+$footer-brand-margin-top: $baseline * 2;
+//Footer bottom
+$footer-bottom-bg-color: $color-bg-01;
+$footer-bottom-font-size: $small-text-font-size;
+$footer-bottom-text-color: $color-text;
+//Footer nav
+$footer-top-nav-text-color: $link-text-color;
+$footer-top-nav-fotn-weight: 700;
+$footer-bottom-nav-text-color: $color-text;
+//Footer social
+$footer-social-ico-color: $color-text;
+$footer-social-ico-hover-color: $color-primary;
+$footer-social-border-color: $color-bg-02;
+$footer-social-border-radius: 3px;
+//Footer brilo
+$footer-brilo-bg: $color-primary;
+$footer-brilo-text-color: $color-white;
+//----------------------------------//
+//---------- BREADCRUMBS ----------//
+//--------------------------------//
+$breadcrumbs-text-color: $color-text;
+$breadcrumbs-link-text-color: $color-primary;
+$breadcrumbs-font-size: 14px;
+$breadcrumbs-font-weight: 700;
+$breadcrumbs-bullet-border-radius: 0;
+//----------------------------//
+//---------- ASIDE ----------//
+//--------------------------//
+$aside-nav-font-size: $base-text-font-size;
+$aside-nav-sub-menu-font-size: $small-text-font-size;
+$aside-nav-text-color: $link-text-color;
+$aside-nav-font-weight: 400;
+$aside-nav-border-color: $color-text-light;
+$aside-nav-bg-color: $color-white;
+$aside-nav-border-radius: $border-radius-base;
+$aside-posts-font-size: $small-text-font-size;
+$aside-nav-bullet-border-radius: 0;
+//--------------------------------//
+//---------- HP SLIDER ----------//
+//------------------------------//
+$hp-slider-hide-arrows: true;
+$hp-slider-dots-bg: rgba(255, 255, 255, 0.4);
+$hp-slider-dots-active-bg: $color-primary;
+$hp-slider-dots-border-color: $color-white;
+//---------------------------------//
+//---------- PAGINATION ----------//
+//-------------------------------//
+$pagination-text-color: $link-text-color;
+$pagination-text-color-hover: $pagination-text-color;
+$pagination-bg-color: $color-bg-03;
+$pagination-active-text-color: $color-text;
+$pagination-active-bg-color: transparent;
+$pagination-font-size: $base-text-font-size;
+//----------------------------//
+//---------- IMAGES ----------//
+//--------------------------//
+$image-border-radius: $border-radius-base;
+$image-placeholder-bg-color: $color-bg-01;
+//---------------------------------------------//
+//---------- COMPETITIVE ADVANTAGES ----------//
+//-------------------------------------------//
+$advantages-img-bg-color: $color-white;
+$advantages-ico-fill-color: $color-bg-02;
+$advantages-ico-size: $baseline * 2.5;
+$advantages-border-color: $color-bg-02;
+$advanteges-border-width: 2px;
+$advantages-border-radius: 100%;
+//-----------------------------------------//
+//---------- NEWSLETTER SECTION ----------//
+//---------------------------------------//
+$newsletter-bg-color: $color-primary;
+$newsletter-text-color: $color-white;
+$newsletter-border-color: $color-white;
+$newsletter-button-text-color: $color-white;
+$newsletter-button-text-font-weight: 700;
+//---------------------------------//
+//---------- WP CAPTION ----------//
+//-------------------------------//
+$wp-caption-font-size: 15px;
+$wp-caption-text-color: $color-text;
+$wp-caption-bg-color: $color-bg-01;
+//-----------------------------//
+//---------- LISTS ----------//
+//---------------------------//
+$list-bullet-color: $color-primary;
+//-------------------------//
+//---------- HR ----------//
+//-----------------------//
+$hr-bg-color: $color-bg-01;
+//---------------------------------//
+//---------- BLOCKQUOTE ----------//
+//-------------------------------//
+$blockquote-font-size: $base-text-font-size;
+$blockquote-bg-color: $color-bg-01;
+$blockquote-border-radius: $border-radius-base;
+//----------------------------//
+//---------- TABLE ----------//
+//--------------------------//
+$table-head-bg-color: $color-bg-01;
+$table-border-radius: $border-radius-base;
+$table-font-size: $small-text-font-size;
+$table-cell-padding: $baseline * 0.5 25px;
+$table-text-color: $color-text;
+//----------------------------------//
+//---------- CONTACT FORM ---------//
+//--------------------------------//
+$contact-form-bg-color: $color-bg-03;
+$contact-form-input-bg-color: $color-white;
+$contact-form-border-color: $color-bg-03;
+$contact-form-text-color: $color-text;
+//----------------------------------//
+//---------- COMMENT FORM ---------//
+//--------------------------------//
+$comment-form-bg-color: $color-bg-03;
+$comment-form-input-bg-color: $color-white;
+$comment-form-border-color: $color-bg-03;
+$comment-form-text-color: $color-text;
+//-----------------------------------//
+//---------- COMMENTS ITEM ---------//
+//---------------------------------//
+$comment-head-bg-color: $color-bg-02;
+$comment-head-text-color: $color-white;
+$comment-content-bg-color: $color-bg-03;

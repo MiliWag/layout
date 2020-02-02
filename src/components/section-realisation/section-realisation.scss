@@ -1,0 +1,44 @@
+.section-realisation {
+    h2 {
+        text-align: center;
+        font-size: $base-heading-font-size;
+        font-weight: bold;
+        color: $color-secondary;
+        font-family: $font-family-primary;
+        padding: 20px;
+        .header-orange {
+            color: $color-primary;
+        }
+    }
+    p {
+        max-width: 639px;
+        font-size: $small-text-font-size;
+        font-family: $font-family-secondary;
+        color: $color-secondary;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .col {
+        padding: 30px;
+        margin-left: 10px;
+    }
+    h3 {
+        color: $color-secondary;
+        font-family: $font-family-primary;
+        font-size: $article-heading-font-size;
+        span {
+            background-color: $color-primary;
+            background: linear-gradient(135deg, $color-primary, $color-gradient);
+            color: $color-white;
+            width: 54px;
+            height: 54px;
+            border-radius: 27px;
+            padding: 10px;
+        }
+        p {
+            font-size: $small-text-font-size;
+            font-family: $font-family-secondary;
+        }
+    }
+}

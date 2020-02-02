@@ -1,0 +1,127 @@
+//Post detail comments section
+.post-detail-comments-section {
+	padding-top: $baseline;
+}
+
+//Comments item
+.comments-item {
+	margin-bottom: $baseline * 2;
+
+	.comments-item {
+		margin-left: 25px;
+		margin-top: $baseline;
+		margin-bottom: $baseline;
+	}
+}
+
+//Comments item head
+.comments-item-head {
+	background: $comment-head-bg-color;
+	color: $comment-head-text-color;
+	padding: $baseline * 0.5 15px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+//Comments item author
+.comments-item-author {
+	font-weight: 700;
+	margin-right: 10px;
+}
+
+//Comments item date
+.comments-item-date {
+}
+
+//Comment content
+.comments-item-content {
+	background: $comment-content-bg-color;
+	padding: $baseline * 0.5 15px;
+
+	p {
+		color: $color-text;
+	}
+}
+
+//Reply
+.comments-item-reply {
+	display: flex;
+
+	span {
+		margin-left: auto;
+		color: $link-text-color;
+		cursor: pointer;
+		font-weight: 700;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+//Up to phone landscape - up to 767px
+@media (max-width: map-get($grid-breakpoints, md) - 1px) {
+	//Comment
+	.comment {
+		.children {
+			padding-left: 20px;
+		}
+	}
+
+	//Comment meta
+	.comment-meta {
+		margin-right: 10px;
+		width: 140px;
+	}
+
+	//Comment author
+	.comment-author {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+		img {
+			height: $baseline * 2.5;
+			width: $baseline * 2.5;
+			margin-bottom: $baseline * 0.5;
+			border-radius: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	//Comment content
+	.comment-content {
+		margin-top: 0;
+	}
+}
+
+//Phone portrait - up to 575px
+@media (max-width: map-get($grid-breakpoints, sm) - 1px) {
+	//Comment body
+	.comment-body {
+		margin-bottom: $baseline;
+		flex-wrap: wrap;
+	}
+
+	//Comment meta
+	.comment-meta {
+		margin-left: auto;
+		margin-right: auto;
+
+		margin-bottom: $baseline * 0.5;
+	}
+
+	//Comment author
+	.comment-author {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	//Comment content
+	.comment-content {
+		width: 100%;
+	}
+}

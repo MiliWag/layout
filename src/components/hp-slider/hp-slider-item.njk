@@ -1,0 +1,23 @@
+ {# @@utilityClass: hp-slider-item-dark, hp-slider-item  #}
+
+  {% macro sliderItem(title,perex,buttonText,utilityClass,imgSrc) %}
+    
+  
+
+<div class="hp-slider-item {{ utilityClass }}">
+	<div class="hp-slider-img">
+		{# Slider has custom Lazyloading = no data-src #}
+		<img data-lazy="{{ imgSrc }}" alt="{{ title }}">
+	</div>
+
+	<div class="hp-slider-text container">
+
+		<h2 class="hp-slider-heading hp-heading">{{ title }}</h2>
+
+		<p class="hp-slider-description">{{ perex }}</p>
+
+		<a class="hp-slider-button btn btn-large" href=""><span>{{ buttonText }}</span></a>
+	</div>
+</div>
+
+{% endmacro %}

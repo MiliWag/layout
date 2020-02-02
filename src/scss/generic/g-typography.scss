@@ -1,0 +1,172 @@
+/* purgecss start ignore */
+
+body {
+    line-height: $baseline;
+    font-family: $font-family-primary;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale !important;
+    color: $color-text;
+}
+
+//Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+//HP heading
+.hp-heading {
+    font-size: $hp-heading-font-size;
+    transform: translateY($hp-heading-offset);
+    line-height: $hp-heading-line-height;
+}
+
+//Base heading
+.base-heading,
+.entry-content h1 {
+    font-size: $base-heading-font-size;
+    transform: translateY($base-heading-offset);
+    line-height: $base-heading-line-height;
+    margin-bottom: $baseline * 2;
+}
+
+//Base subheading
+.base-subheading,
+.entry-content h2 {
+    font-size: $base-subheading-font-size;
+    transform: translateY($base-subheading-offset);
+    line-height: $base-subheading-line-height;
+    margin-bottom: $baseline * 2;
+}
+
+//Article heading
+.article-heading,
+.entry-content h3 {
+    font-size: $article-heading-font-size;
+    transform: translateY($article-heading-offset);
+    line-height: $article-heading-line-height;
+    margin-bottom: $baseline * 2;
+}
+
+//Text
+p {
+    font-size: $base-text-font-size;
+    transform: translateY($base-text-offset);
+    margin-bottom: $baseline;
+    color: $color-text-light;
+}
+
+//Small text
+.small-text {
+    font-size: $small-text-font-size;
+    transform: translateY($small-text-offset);
+}
+
+//Smallest text
+.smallest-text {
+    font-size: $smallest-text-font-size;
+    transform: translateY($smallest-text-offset);
+}
+
+//link
+a {
+    text-decoration: none;
+    color: $link-text-color;
+    &:hover,
+    &:focus {
+        color: $link-text-color;
+        text-decoration: underline;
+    }
+}
+
+//Lists
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+//Misc
+strong,
+b {
+    font-weight: 700;
+}
+
+//Up to tablet landscape - up to 1199px
+@media (max-width: map-get($grid-breakpoints, xl) - 1px) {
+    //HP heading
+    .hp-heading {
+        font-size: $hp-heading-font-size-LG;
+        transform: translateY($hp-heading-offset-LG);
+        line-height: $hp-heading-line-height-LG;
+    }
+    //Base heading
+    .base-heading,
+    .entry-content h1 {
+        font-size: $base-heading-font-size-LG;
+        transform: translateY($base-heading-offset-LG);
+        line-height: $base-heading-line-height-LG;
+    }
+    //Base subheading
+    .base-subheading,
+    .entry-content h2 {
+        font-size: $base-subheading-font-size-LG;
+        transform: translateY($base-subheading-offset-LG);
+        line-height: $base-subheading-line-height-LG;
+    }
+    //Article heading
+    .article-heading,
+    .entry-content h3 {
+        font-size: $article-heading-font-size-LG;
+        transform: translateY($article-heading-offset-LG);
+        line-height: $article-heading-line-height-LG;
+    }
+}
+
+//Up to phone landscape - up to 767px
+@media (max-width: map-get($grid-breakpoints, md) - 1px) {
+    //HP heading
+    .hp-heading {
+        font-size: $hp-heading-font-size-SM;
+        transform: translateY($hp-heading-offset-SM);
+        line-height: $hp-heading-line-height-SM;
+    }
+    //Base heading
+    .base-heading,
+    .entry-content h1 {
+        font-size: $base-heading-font-size-SM;
+        transform: translateY($base-heading-offset-SM);
+        line-height: $base-heading-line-height-SM;
+    }
+    //Base subheading
+    .base-subheading,
+    .entry-content h2 {
+        font-size: $base-subheading-font-size-SM;
+        transform: translateY($base-subheading-offset-SM);
+        line-height: $base-subheading-line-height-SM;
+    }
+    //Article heading
+    .article-heading,
+    .entry-content h3 {
+        font-size: $article-heading-font-size-SM;
+        transform: translateY($article-heading-offset-SM);
+        line-height: $article-heading-line-height-SM;
+    }
+}
+
+//Phone portrait - up to 575px
+@media (max-width: map-get($grid-breakpoints, sm) - 1px) {
+    //Base heading
+    .base-heading {
+        margin-bottom: $baseline;
+    }
+}
+
+
+/* purgecss end ignore */

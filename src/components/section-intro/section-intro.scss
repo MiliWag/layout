@@ -1,0 +1,70 @@
+.section-intro {
+    margin-bottom: 74px;
+    h1 {
+        max-width: 859px;
+        height: 155px;
+        margin-left: 80px;
+        margin-bottom: 16px;
+        font-family: $font-family-primary;
+        font-size: $hp-heading-font-size;
+        font-weight: bold;
+        line-height: 1.25;
+        color: $color-secondary;
+        .header-orange {
+            color: $color-primary;
+        }
+    }
+    p {
+        margin-left: 80px;
+        margin-bottom: 32px;
+        font-family: $font-family-secondary;
+        font-size: 22px;
+        color: $color-secondary;
+    }
+    .button-primary {
+        display: inline-block;
+        width: 239px;
+        height: 57px;
+        padding: 16px;
+        margin-left: 80px;
+        margin-bottom: 63px;
+        color: $color-white;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        background-color: $color-primary;
+        background: linear-gradient(103deg, $color-primary, $color-gradient);
+        border-style: none;
+        border-radius: 2px;
+        box-shadow: 0 3px 8px 0 rgba(255, 77, 77, 0.4);
+        .arrow-right-white {
+            margin-left: 10px;
+            max-width: 14px;
+            display: inline-flex;
+        }
+    }
+    a:hover {
+        text-decoration: none;
+        color: $color-white;
+        background: #ff1a1a;
+    }
+    .hp-intro {
+        height: 570px;
+    }
+    .intro-image {
+        position: relative;
+    }
+    .component {
+        position: absolute;
+        bottom: 60px;
+        right: 100px;
+    }
+    .component-outline {
+        width: 452.8px;
+        height: 811px;
+        opacity: 0.2;
+        position: absolute;
+        top: -280px;
+        right: 80px;
+    }
+}

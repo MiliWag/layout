@@ -1,0 +1,22 @@
+/* purgecss start ignore */
+@import "settings/s-general.scss";
+@import "settings/*";
+@import "tools/*";
+
+@import "wordpress/wordpress-header.scss";
+
+/* purgecss end ignore */
+@import "vendors/*";
+
+/* purgecss start ignore */
+@import "overrides/*";
+
+@import "elements/*";
+@import "generic/*";
+@import "wordpress/wordpress-content.scss";
+@import "wordpress/wordpress-block-library.scss";
+/* purgecss end ignore */
+
+@import "../components/**/*";
+
+@import "utilities/*";
