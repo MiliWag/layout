@@ -1,0 +1,59 @@
+.section-products {
+    h2 {
+        text-align: center;
+        font-size: $base-heading-font-size;
+        font-weight: bold;
+        line-height: 1.22;
+        color: $color-secondary;
+        font-family: $font-family-primary;
+        padding-top: 64px;
+        padding-bottom: 64px;
+        .header-orange {
+            color: $color-primary;
+        }
+    }
+    h3 {
+        padding: 16px 8px 8px 8px;
+        text-align: left;
+        font-size: $article-heading-font-size;
+        font-weight: bold;
+        color: $color-secondary;
+        overflow: visible;
+    }
+    .col-sm {
+        display: flex;
+        padding-inline-end: 0px;
+        justify-content: space-between;
+        max-width: 400px;
+        max-height: 153px;
+        .left-side {
+            display: table-column;
+            .romotop-logo,
+            .edilkamin-logo,
+            .kalfire-logo,
+            .osburn-logo,
+            .opop-logo {
+                padding-left: 8px;
+            }
+            .find-more {
+                display: flex;
+                padding: 16px 16px 16px 8px;
+                .arrow-primary {
+                    width: 13px;
+                    margin-left: 8px;
+                    display: inline-block;
+                }
+            }
+        }
+        .sp-img-background {
+            width: 182px;
+            height: 153px;
+            background-image: linear-gradient(50deg, #f2f2f2, #d6d6d6 100%);
+            img {
+                position: absolute;
+                bottom: 16px;
+                right: 32px;
+            }
+        }
+    }
+}
