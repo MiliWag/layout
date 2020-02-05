@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.8" height="23.3" viewBox="0 0 16.916 17.293">
+    <defs>
+        <style>
+            .cls-1{fill-rule:evenodd;fill:url(#linear-gradient)}
+        </style>
+        <linearGradient id="linear-gradient" x2="1" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ff4d4d"/>
+            <stop offset="1" stop-color="#ff7d4d"/>
+        </linearGradient>
+    </defs>
+    <path id="chevrons-right" d="M12.739 7.116l1.823-1.823 8.647 8.647-8.647 8.647-1.823-1.823 6.824-6.824zm-6.446 0l1.823-1.823 8.647 8.647-8.647 8.647-1.823-1.824 6.824-6.824z" class="cls-1" transform="translate(-6.293 -5.293)"/>
+</svg>

@@ -1,0 +1,46 @@
+.section-contact {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 160px;
+    .container {
+        display: flex;
+    }
+    h2 {
+        font-family: $font-family-primary;
+        font-size: $base-heading-font-size;
+        font-weight: normal;
+        line-height: 1.67;
+        color: $color-secondary;
+        img {
+            display: inline-block;
+            margin-right: 16px;
+            margin-bottom: 16px;
+            width: 153.8px;
+            height: 81.8px;
+        }
+    }
+    p {
+        font-family: $font-family-secondary;
+        font-size: $small-text-font-size;
+        color: $color-secondary;
+    }
+    h3 {
+        font-size: $base-text-font-size;
+        padding-left: 16px;
+        img {
+            display: inline-block;
+            margin-right: 8px;
+        }
+    }
+    .container-second {
+        max-width: 608px;
+    }
+    .col-sm {
+        text-align: left;
+        height: 100%;
+        margin: 0;
+        padding: 16px;
+        border: none;
+        border-top: 1px solid #e5e5e5;
+    }
+}
