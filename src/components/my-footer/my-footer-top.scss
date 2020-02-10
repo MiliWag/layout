@@ -1,0 +1,114 @@
+.my-footer-top {
+    max-height: 684px;
+    background-color: $color-secondary;
+    h3 {
+        padding-top: 96px;
+        padding-bottom: 32px;
+        color: $color-white;
+        font-family: $font-family-primary;
+        font-size: $article-heading-font-size;
+        border-bottom: solid 1px $color-primary;
+    }
+    .container-mft {
+        align-items: center;
+        margin-bottom: 96px;
+        background-color: $color-secondary;
+    }
+    .row {
+        justify-content: space-evenly;
+    }
+    .col-sm {
+        max-height: 320px;
+        background-color: $color-secondary;
+        border: none;
+        text-align: left;
+        span {
+            color: $color-white;
+            font-weight: bold;
+        }
+    }
+    li {
+        color: $color-white;
+    }
+    .footer-contacts {
+        display: flex;
+        flex-direction: column;
+        li {
+            padding-top: 32px;
+        }
+        .arrow-primary {
+            width: 13px;
+            margin-left: 8px;
+            display: inline-block;
+        }
+        img {
+            width: 13px;
+            height: 13px;
+            display: inline-block;
+            margin-right: 8px;
+        }
+    }
+    .follow-us {
+        padding-top: 32px;
+        ul {
+            display: flex;
+            flex-direction: row;
+        }
+        img {
+            padding-top: 16px;
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+            display: inline-block;
+        }
+        span {
+            color: $color-white;
+            font-family: $font-family-secondary;
+            font-size: $small-text-font-size;
+            font-weight: normal;
+        }
+    }
+    .invoice-rolig {
+        color: $color-white;
+        font-family: $font-family-secondary;
+        font-weight: bold;
+        padding-top: 32px;
+        padding-bottom: 16px;
+    }
+    .invoice {
+        li {
+            padding-top: 8px;
+        }
+    }
+    .important-information {
+        padding-top: 16px;
+        li {
+            padding-top: 16px;
+        }
+        a {
+            color: $color-white;
+            text-decoration: underline;
+        }
+    }
+    .rolig-motto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        box-shadow: 0 -1px 0 0 #3d435c;
+        img {
+            height: 92px;
+        }
+        p {
+            font-family: $font-family-primary;
+            font-size: 34px;
+            color: $color-white;
+            opacity: 0.5;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: italic;
+            line-height: 2.21;
+        }
+    }
+}
