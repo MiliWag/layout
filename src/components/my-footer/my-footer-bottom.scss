@@ -1,8 +1,10 @@
-.second-footer {
+.my-footer-bottom {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100px;
     padding-top: 40px;
+    padding-left: 128px;
+    padding-right: 128px;
     box-shadow: 0 -1px 0 0 #3d435c;
     background-color: $color-black;
     color: $color-white;

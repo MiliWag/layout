@@ -1,5 +1,4 @@
 .my-footer-top {
-    max-height: 684px;
     background-color: $color-secondary;
     h3 {
         padding-top: 96px;
@@ -55,10 +54,11 @@
             flex-direction: row;
         }
         img {
+            filter: invert(100%) sepia(0%) saturate(7404%) hue-rotate(3deg) brightness(111%) contrast(117%);
+            opacity: 0.4;
             padding-top: 16px;
-            width: 32px;
-            height: 32px;
-            margin-right: 8px;
+            width: 56px;
+            height: 56px;
             display: inline-block;
         }
         span {
