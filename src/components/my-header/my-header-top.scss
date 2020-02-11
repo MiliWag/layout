@@ -1,0 +1,33 @@
+.my-header-top {
+    height: 24px;
+    padding-top: 16px;
+    padding-bottom: 32px;
+    margin-right: 168px;
+    margin-left: 80px;
+    border-bottom: solid 1px #e5e5e5;
+    font-family: $font-family-primary;
+    font-size: $small-text-font-size;
+    color: #96979b;
+    a {
+        color: #96979b;
+        text-decoration: none;
+        &:hover {
+            color: $color-primary;
+            text-decoration: underline;
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    li {
+        margin-right: 16px;
+    }
+    li:last-child {
+        margin-right: 0px;
+    }
+    img {
+        display: inline-block;
+        margin-right: 8px;
+    }
+}
