@@ -46,6 +46,16 @@
             display: inline-block;
             margin-right: 8px;
         }
+        a {
+            color: $color-white;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .all-contacts {
+            color: $color-primary;
+        }
     }
     .follow-us {
         padding-top: 32px;

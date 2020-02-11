@@ -48,6 +48,14 @@
         font-size: $small-text-font-size;
         color: $color-primary;
     }
+    a {
+        color: $color-secondary;
+        text-decoration: none;
+        &:hover {
+            color: $color-primary;
+            text-decoration: underline;
+        }
+    }
 }
 
 .faq-links {
