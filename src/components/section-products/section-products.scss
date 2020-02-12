@@ -20,6 +20,10 @@
         color: $color-secondary;
         overflow: visible;
     }
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
     .col-sm {
         display: flex;
         padding-inline-end: 0px;

@@ -27,6 +27,7 @@
     width: 239px;
     height: 57px;
     color: $color-white;
+    font-size: $small-text-font-size;
     font-weight: bold;
     text-decoration: none;
     background-color: $color-secondary;
@@ -42,5 +43,13 @@
         text-decoration: none;
         color: $color-secondary;
         background-color: $color-white;
+        .arrow-right-white {
+            filter: invert(11%) sepia(50%) saturate(672%) hue-rotate(191deg) brightness(93%) contrast(85%);
+        }
+    }
+    @media (max-width:740px) {
+        h2 {
+            color: red;
+        }
     }
 }

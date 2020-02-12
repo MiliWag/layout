@@ -103,7 +103,9 @@
     .rolig-motto {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-left: 120px;
+        margin-right: 120px;
         padding-top: 40px;
         padding-bottom: 40px;
         box-shadow: 0 -1px 0 0 #3d435c;
