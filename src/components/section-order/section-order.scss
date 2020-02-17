@@ -1,10 +1,9 @@
 .section-order {
-    height: 450px;
     background-image: url("images/theme/socks.png"), linear-gradient(103deg, $color-primary, $color-gradient);
     color: $color-white;
     font-family: $font-family-primary;
     text-align: center;
-    padding: 80px;
+    padding: 112px 80px 112px 80px;
     h2 {
         font-size: $base-heading-font-size;
         font-weight: bold;
@@ -47,9 +46,38 @@
             filter: invert(11%) sepia(50%) saturate(672%) hue-rotate(191deg) brightness(93%) contrast(85%);
         }
     }
-    @media (max-width:740px) {
+}
+
+@media (max-width:760px) {
+    .section-order {
         h2 {
-            color: red;
+            font-size: $base-subheading-font-size;
+            padding: 16px;
+        }
+    }
+}
+
+@media (max-width:560px) {
+    .section-order {
+        padding: 80px 32px 80px 32px;
+        h2 {
+            padding: 0px 0px 16px 0px;
+            line-height: 32px;
+            font-size: $article-heading-font-size;
+        }
+        .p-order {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+@media (max-width: 280px) {
+    .section-order {
+        .button-order {
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            height: auto;
         }
     }
 }

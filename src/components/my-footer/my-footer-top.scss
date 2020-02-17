@@ -9,15 +9,15 @@
         border-bottom: solid 1px $color-primary;
     }
     .container-mft {
+        padding-left: 32px;
+        padding-right: 32px;
         align-items: center;
-        margin-bottom: 96px;
         background-color: $color-secondary;
     }
     .row {
         justify-content: space-evenly;
     }
     .col-sm {
-        max-height: 320px;
         background-color: $color-secondary;
         border: none;
         text-align: left;
@@ -121,6 +121,36 @@
             font-stretch: normal;
             font-style: italic;
             line-height: 2.21;
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .my-footer-top {
+        .rolig-motto {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            p {
+                padding: 32px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .my-footer-top {
+        h3 {
+            font-size: 20px;
+        }
+        .col-sm {
+            width: auto;
+            height: auto;
+            margin-bottom: 0;
+        }
+        .col-sm:last-child {
+            margin-bottom: 64px;
         }
     }
 }

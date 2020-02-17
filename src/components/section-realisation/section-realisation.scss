@@ -20,6 +20,7 @@
     }
     .col:last-child {
         margin-left: 64px;
+        position: relative;
     }
     .realisation-step {
         max-width: 416px;
@@ -46,5 +47,16 @@
         color: $color-secondary;
         font-family: $font-family-primary;
         font-size: $article-heading-font-size;
+    }
+    .line {
+        transform: rotate(90deg);
+        color: #f2f2f2;
+        width: 200px;
+        height: 5px;
+    }
+    .arrow-curve {
+        position: absolute;
+        margin-left: -96px;
+        margin-top: -120px;
     }
 }

@@ -1,10 +1,7 @@
 .my-footer-bottom {
     display: flex;
     justify-content: space-between;
-    height: 100px;
-    padding-top: 40px;
-    padding-left: 128px;
-    padding-right: 128px;
+    padding: 40px 128px 40px 128px;
     box-shadow: 0 -1px 0 0 #3d435c;
     background-color: $color-black;
     color: $color-white;
@@ -22,10 +19,30 @@
         }
     }
     .circle-arrow-bottom {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
         transform: rotate(180deg);
         display: inline-block;
         width: 24px;
         height: 24px;
         margin-left: 8px;
+    }
+}
+
+@media (max-width:768px) {
+    .my-footer-bottom {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width:560px) {
+    .my-footer-bottom {
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        .footer-copyright {
+            margin-bottom: 32px;
+            padding: 16px;
+        }
     }
 }
