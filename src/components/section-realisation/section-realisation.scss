@@ -1,5 +1,5 @@
 .section-realisation {
-    margin-bottom: 72px;
+    margin-bottom: 120px;
     h2 {
         text-align: center;
         font-size: $base-heading-font-size;
@@ -15,7 +15,9 @@
         font-size: $small-text-font-size;
         font-family: $font-family-secondary;
         color: $color-secondary;
-        padding: 16px 320px 16px 320px;
+        padding: 16px;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
     }
     .col:last-child {
@@ -23,8 +25,6 @@
         position: relative;
     }
     .realisation-step {
-        max-width: 416px;
-        max-height: 200px;
         p {
             text-align: left;
             margin-left: 72px;
@@ -58,5 +58,34 @@
         position: absolute;
         margin-left: -96px;
         margin-top: -120px;
+    }
+}
+
+@media (max-width:850px) {
+    .section-realisation h2 {
+        font-size: $base-heading-font-size-LG;
+    }
+}
+
+@media (max-width:767px) {
+    .section-realisation {
+        h2 {
+            font-size: $base-subheading-font-size;
+            line-height: 32px;
+        }
+        .container {
+            padding: auto;
+        }
+        .row {
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .col:last-child {
+            margin-left: auto;
+        }
+        .arrow-curve {
+            display: none;
+        }
     }
 }

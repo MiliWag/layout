@@ -31,3 +31,9 @@
         margin-right: 8px;
     }
 }
+
+@media (max-width:992px) {
+    .my-header-top {
+        display: none;
+    }
+}

@@ -1,8 +1,6 @@
 .section-intro {
     margin-bottom: 72px;
     h1 {
-        max-width: 859px;
-        height: 155px;
         margin-left: 80px;
         margin-bottom: 16px;
         font-family: $font-family-primary;
@@ -23,7 +21,7 @@
     }
     .button-primary {
         display: inline-block;
-        width: 239px;
+        max-width: 239px;
         height: 57px;
         padding: 16px;
         margin-left: 80px;
@@ -70,5 +68,68 @@
         position: absolute;
         top: -280px;
         right: 80px;
+    }
+}
+
+@media (max-width:1300px) {
+    .section-intro {
+        .component {
+            width: 30%;
+        }
+        .component-outline {
+            width: 30%;
+            top: -208px;
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .section-intro {
+        .hp-intro {
+            height: auto;
+        }
+        .component {
+            width: 20%;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .section-intro {
+        margin-bottom: auto;
+        h1 {
+            font-size: $base-heading-font-size;
+        }
+        p {
+            font-size: $base-text-font-size;
+        }
+    }
+}
+
+@media (max-width:690px) {
+    .section-intro {
+        h1 {
+            font-size: $base-heading-font-size-LG;
+        }
+        p {
+            font-size: $small-text-font-size;
+        }
+    }
+}
+
+@media (max-width:575px) {
+    .section-intro {
+        .hp-intro,
+        .component,
+        .component-outline {
+            display: none;
+        }
+        .button-primary {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: auto;
+            height: auto;
+        }
     }
 }

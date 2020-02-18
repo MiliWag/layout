@@ -1,6 +1,5 @@
 .section-faq {
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 64px;
     padding-bottom: 160px;
     position: relative;
     h2 {
@@ -9,15 +8,16 @@
         font-weight: bold;
         line-height: 1.22;
         color: $color-secondary;
+        margin-bottom: 32px;
         .header-orange {
             color: $color-primary;
         }
     }
-    p {
+    .container p {
         font-family: $font-family-secondary;
         font-size: $small-text-font-size;
         color: $color-secondary;
-        padding: 32px;
+        padding: 0;
     }
     .arrow-primary {
         width: 13px;
@@ -36,6 +36,7 @@
 
 .section-contacts {
     display: flex;
+    font-family: $font-family-secondary;
     li {
         margin-right: 16px;
     }
@@ -64,6 +65,12 @@
     li {
         padding: 16px;
     }
+    a {
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 .logs {
@@ -73,4 +80,45 @@
     bottom: 8%;
     object-fit: cover;
     font-family: "object-fit: cover;";
+}
+
+@media (max-width:1160px) {
+    .section-faq {
+        .row {
+            display: flex;
+            flex-direction: column;
+        }
+        .col {
+            margin-bottom: 32px;
+        }
+        .faq-links li {
+            padding: 16px 0px 16px 0px;
+        }
+    }
+}
+
+@media (max-width:540px) {
+    .section-faq {
+        h2 {
+            font-size: $base-heading-font-size-LG;
+        }
+        .section-contacts {
+            display: flex;
+            flex-direction: column;
+            li {
+                margin-bottom: 16px;
+            }
+        }
+        .faq-links {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .section-faq {
+        .faq-links img {
+            display: none;
+        }
+    }
 }

@@ -61,3 +61,15 @@
         }
     }
 }
+
+@media (max-width:768px) {
+    .section-products h2 {
+        font-size: $base-heading-font-size-LG;
+    }
+}
+
+@media (max-width:576px) {
+    .section-products h2 {
+        font-size: $article-heading-font-size;
+    }
+}
