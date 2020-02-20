@@ -50,14 +50,26 @@
             }
         }
         .sp-img-background {
+            display: flex;
+            justify-content: center;
             width: 182px;
-            height: 153px;
+            height: 152px;
             background-image: linear-gradient(50deg, #f2f2f2, #d6d6d6 100%);
             img {
                 position: absolute;
                 bottom: 16px;
-                right: 32px;
             }
+        }
+        .triangle-sp {
+            z-index: 1;
+            width: 0;
+            height: 0;
+            border: 0 solid transparent;
+            border-right-width: 30px;
+            border-left-width: 0px;
+            border-bottom: 151px solid $color-white;
+            position: absolute;
+            right: 152px;
         }
     }
 }

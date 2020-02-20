@@ -80,6 +80,8 @@
     background-color: #ffffff;
     position: relative;
     .img-background {
+        display: flex;
+        justify-content: center;
         width: 295px;
         height: 182px;
         margin-left: -16px;
@@ -88,7 +90,33 @@
     }
     .signpost-item {
         position: absolute;
-        top: -38px;
-        left: 32px;
+        top: -40px;
+    }
+    .signpost-item-last {
+        position: absolute;
+        top: -74.5px;
+    }
+    .triangle-left {
+        width: 0;
+        height: 0;
+        border: 0 solid transparent;
+        border-right-width: 293px;
+        border-left-width: 0px;
+        border-bottom: 51px solid $color-white;
+        position: absolute;
+        top: 131px;
+    }
+    .img-background-tr {
+        display: flex;
+        justify-content: center;
+        width: 295px;
+        height: 182px;
+        margin-left: -16px;
+        margin-bottom: 16px;
+        background-image: linear-gradient(122deg, #f2f2f2, #d6d6d6);
+        .triangle-left {
+            transform: rotateX(180deg);
+            transform: rotateY(180deg);
+        }
     }
 }
