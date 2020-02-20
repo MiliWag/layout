@@ -38,12 +38,44 @@
         width: 22px;
         height: 22px;
     }
+    button {
+        display: none;
+    }
 }
 
 @media (max-width:992px) {
     .my-header-bottom {
-        ul {
+        margin-right: auto;
+        .menu {
             display: none;
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+            background: $color-white;
+        }
+        .menu-show .menu {
+            display: block;
+        }
+        button {
+            display: inline-block;
+            font-family: $font-family-primary;
+            font-weight: bold;
+            color: $color-primary;
+            background-color: $color-white;
+            border: solid 1.5px $color-primary;
+            border-radius: 10px;
+        }
+        .nav-icon-open {
+            display: inline;
+        }
+        .nav-icon-close {
+            display: none;
+        }
+        .menu-show .nav-icon-open {
+            display: none;
+        }
+        .menu-show .nav-icon-close {
+            display: block;
         }
     }
 }
