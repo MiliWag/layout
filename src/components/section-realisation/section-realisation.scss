@@ -23,13 +23,26 @@
     .col:last-child {
         margin-left: 64px;
         position: relative;
+        .line {
+            height: 65%;
+        }
     }
     .realisation-step {
         p {
+            z-index: 1;
             text-align: left;
             margin-left: 72px;
             padding: 0px 0px 32px 0px;
         }
+    }
+    .line {
+        z-index: -1;
+        position: absolute;
+        margin-left: 24px;
+        margin-top: -16px;
+        background-color: #f2f2f2;
+        width: 5px;
+        height: 82%;
     }
     .point {
         display: inline-block;
@@ -38,32 +51,42 @@
         border-radius: 27px;
         padding: 16px;
         margin-right: 16px;
+        font-size: $base-subheading-font-size;
+        font-weight: bold;
         text-align: center;
         background-color: $color-primary;
         background: linear-gradient(135deg, $color-primary, $color-gradient);
         color: $color-white;
     }
     h3 {
+        margin-left: 72px;
+        margin-top: -32px;
+        padding-bottom: 24px;
         color: $color-secondary;
         font-family: $font-family-primary;
         font-size: $article-heading-font-size;
     }
-    .line {
-        transform: rotate(90deg);
-        color: #f2f2f2;
-        width: 200px;
-        height: 5px;
-    }
     .arrow-curve {
         position: absolute;
         margin-left: -96px;
-        margin-top: -120px;
+        margin-top: -112px;
     }
 }
 
-@media (max-width:850px) {
-    .section-realisation h2 {
-        font-size: $base-heading-font-size-LG;
+@media (max-width:1070px) {
+    .section-realisation .arrow-curve {
+        margin-top: -136px;
+    }
+}
+
+@media (max-width:885px) {
+    .section-realisation {
+        h2 {
+            font-size: $base-heading-font-size-LG;
+        }
+        .arrow-curve {
+            margin-top: -160px;
+        }
     }
 }
 
@@ -81,11 +104,42 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .line {
+            height: 100%;
+        }
         .col:last-child {
             margin-left: auto;
+            .line {
+                height: 80%;
+            }
         }
         .arrow-curve {
             display: none;
+        }
+    }
+}
+
+@media (max-width:345px) {
+    .section-realisation {
+        h3 {
+            font-size: $base-text-font-size;
+        }
+        .point {
+            width: 40px;
+            height: 40px;
+            border-radius: 27px;
+            padding: 6px;
+            margin-right: 16px;
+            font-size: $base-text-font-size;
+        }
+        .line {
+            margin-left: 16px;
+        }
+        .col:last-child {
+            margin-left: auto;
+            .line {
+                height: 90%;
+            }
         }
     }
 }
