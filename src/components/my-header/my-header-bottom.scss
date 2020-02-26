@@ -51,7 +51,6 @@
             position: absolute;
             width: 100%;
             z-index: 1;
-            background: $color-white;
         }
         .menu-show .menu {
             display: block;
@@ -60,22 +59,33 @@
             display: inline-block;
             font-family: $font-family-primary;
             font-weight: bold;
+            font-size: 12px;
             color: $color-primary;
             background-color: $color-white;
-            border: solid 1.5px $color-primary;
-            border-radius: 10px;
+            border: none;
         }
         .nav-icon-open {
             display: inline;
+            div {
+                width: 36px;
+                height: 4px;
+                background-color: $color-primary;
+                margin: 4px;
+                border-radius: 2px;
+                transition: 0.4s;
+            }
+            .line-2 {
+                margin-bottom: 0px;
+            }
         }
-        .nav-icon-close {
-            display: none;
+        .change .line-1 {
+            transform: rotate(-45deg) translate(4px, 4px);
         }
-        .menu-show .nav-icon-open {
-            display: none;
+        .change .line-2 {
+            transform: rotate(45deg) translate(-1px, -10px);
         }
-        .menu-show .nav-icon-close {
-            display: block;
+        .change span {
+            margin-left: 11px;
         }
     }
 }
