@@ -49,11 +49,31 @@
         .menu {
             display: none;
             position: absolute;
-            width: 100%;
+            justify-content: right;
+            width: 30%;
+            margin-top: 40px;
+            margin-left: 60%;
             z-index: 1;
+            background-color: $color-white;
         }
-        .menu-show .menu {
-            display: block;
+        .menu-show {
+            display: flex;
+        }
+        ul {
+            width: 100%;
+            flex-flow: column;
+            img {
+                display: none;
+            }
+        }
+        li {
+            border-bottom: solid 1px #96979b;
+            padding: 8px;
+        }
+        li:last-child,
+        li:first-child,
+        li:nth-last-child(2) {
+            border-bottom: none;
         }
         button {
             display: inline-block;
