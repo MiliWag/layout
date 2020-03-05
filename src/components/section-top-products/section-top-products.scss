@@ -94,7 +94,7 @@
     }
     .signpost-item-last {
         position: absolute;
-        top: -74.5px;
+        top: -60px;
     }
     .triangle-left {
         width: 0;
@@ -105,6 +105,14 @@
         border-bottom: 51px solid $color-white;
         position: absolute;
         top: 131px;
+    }
+    .rectangle {
+        width: 293px;
+        height: 16px;
+        background: $color-white;
+        position: absolute;
+        top: 181.5px;
+        overflow: hidden;
     }
     .img-background-tr {
         display: flex;

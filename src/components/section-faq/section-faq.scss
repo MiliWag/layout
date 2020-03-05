@@ -74,12 +74,13 @@
 }
 
 .logs {
-    position: absolute;
-    max-height: 426px;
-    left: 80%;
-    bottom: 8%;
-    object-fit: cover;
-    font-family: "object-fit: cover;";
+    img {
+        position: absolute;
+        left: 80%;
+        bottom: 8%;
+        clip: rect(auto 300px auto auto);
+        overflow: hidden;
+    }
 }
 
 @media (max-width:1160px) {
