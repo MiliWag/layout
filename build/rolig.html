@@ -18,18 +18,12 @@
 	<header>
 
 		<script>
-			function myFunction(x) {
+			function myFunction() {
 				let navbarToggler = document.querySelector('#navbarToggler')
 				let navbar = document.querySelector('#navbar')
-				navbarToggler.addEventListener('click', function(e) {
-					x.classList.toggle('change')
-					navbar.classList.toggle('menu-show')
-					e.stopPropagation()
-					console.log('kliknuto')
-				})
-				document.addEventListener('click', function() {
-					navbar.classList.remove('menu-show')
-				})
+				navbarToggler.classList.toggle('change')
+				navbar.classList.toggle('menu-show')
+				console.log('kliknuto')
 			}
 		</script>
 
@@ -49,7 +43,7 @@
 
 			<span><img class="rolig-logo" src="images/ico/rolig-logo.svg"></span>
 
-			<button id="navbarToggler" onclick="myFunction(this)">
+			<button id="navbarToggler" onclick="myFunction()">
 
 				<div class="nav-icon-open">
 					<div class="line-1"></div>
@@ -58,7 +52,7 @@
 				</div>
 			</button>
 
-			<nav id="navbar" onclick="myFunction(this)" class="menu">
+			<nav id="navbar" class="menu">
 
 				<ul class="nav-list">
 
@@ -372,8 +366,9 @@
 					<h2><img class="rolig-logo" src="images/ico/rolig-logo.svg">České Budějovice</h2>
 
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec iaculis gravida nulla. Etiam quis quam. Donec quis nibh at felis congue commodo. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.
+					</p>
 
-						<br>Etiam egestas wisi a erat. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
+					<p>Etiam egestas wisi a erat. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
 					</p>
 
 					<div class="container-second">
@@ -405,8 +400,12 @@
 				</div>
 
 				<div class="col">
-					<img class="store" src="images/theme/store.jpg">
-					<img class="store-img-decoration" src="images/ico/store-img-decoration.svg">
+
+					<div class="store-box">
+						<img class="store" src="images/theme/store.jpg">
+						<img class="store-img-decoration" src="images/ico/store-img-decoration.svg">
+					</div>
+
 				</div>
 
 			</div>

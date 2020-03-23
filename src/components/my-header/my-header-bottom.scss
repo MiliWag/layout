@@ -67,7 +67,7 @@
             }
         }
         li {
-            border-bottom: solid 1px #96979b;
+            border-bottom: solid 1px $color-text-light;
             padding: 8px;
         }
         li:last-child,
@@ -92,7 +92,7 @@
                 background-color: $color-primary;
                 margin: 4px;
                 border-radius: 2px;
-                transition: 0.4s;
+                transition: 0.5s;
             }
             .line-2 {
                 margin-bottom: 0px;
