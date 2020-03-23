@@ -30,6 +30,18 @@
     .stp-header {
         margin-bottom: 80px;
     }
+    .component-outline-box {
+        max-width: 453px;
+        max-height: 811px;
+        bottom: -1440px;
+        left: -360px;
+        position: absolute;
+        overflow: hidden;
+        .component-outline {
+            max-width: 453px;
+            height: 811px;
+        }
+    }
 }
 
 .button-primary {

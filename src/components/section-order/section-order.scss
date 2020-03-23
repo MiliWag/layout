@@ -4,6 +4,7 @@
     font-family: $font-family-primary;
     text-align: center;
     padding: 112px 80px 112px 80px;
+    position: relative;
     h2 {
         font-size: $base-heading-font-size;
         font-weight: bold;
@@ -17,6 +18,14 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 50px;
+    }
+    .component-outline {
+        width: 393.2px;
+        right: -120px;
+        bottom: -120px;
+        position: absolute;
+        overflow: hidden;
+        opacity: 0.2;
     }
 }
 

@@ -74,12 +74,15 @@
 }
 
 .logs {
+    max-width: 340px;
+    height: 426px;
+    position: absolute;
+    overflow: hidden;
+    left: 90%;
+    bottom: 8%;
     img {
-        position: absolute;
-        left: 80%;
-        bottom: 8%;
-        clip: rect(auto 300px auto auto);
-        overflow: hidden;
+        max-width: 964px;
+        height: 426px;
     }
 }
 

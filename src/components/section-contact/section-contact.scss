@@ -4,6 +4,11 @@
     padding-bottom: 160px;
     .container {
         display: flex;
+        flex-flow: row;
+        .col {
+            border: none;
+            max-width: 400px;
+        }
     }
     h2 {
         font-family: $font-family-primary;
@@ -31,9 +36,6 @@
             display: inline-block;
             margin-right: 8px;
         }
-    }
-    .col {
-        width: 800px;
     }
     .container-second {
         max-width: 608px;

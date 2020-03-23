@@ -1,5 +1,7 @@
 .my-footer-top {
     background-color: $color-secondary;
+    position: relative;
+    border-top: solid 4px $color-primary;
     h3 {
         padding-top: 96px;
         padding-bottom: 32px;
@@ -121,6 +123,19 @@
             font-stretch: normal;
             font-style: italic;
             line-height: 2.21;
+        }
+    }
+    .component-outline-box {
+        width: 290px;
+        height: 628px;
+        opacity: 0.1;
+        right: -192px;
+        top: 74px;
+        position: absolute;
+        overflow: hidden;
+        .component-outline {
+            max-width: 453px;
+            height: 811px;
         }
     }
 }
