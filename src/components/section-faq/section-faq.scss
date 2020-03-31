@@ -73,16 +73,29 @@
     }
 }
 
-.logs {
+
+/*.logs {
     max-width: 340px;
-    height: 426px;
-    position: absolute;
     overflow: hidden;
+    position: absolute;
     left: 90%;
     bottom: 8%;
     img {
         max-width: 964px;
-        height: 426px;
+    }
+}*/
+
+.logs {
+    max-width: 152px;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    bottom: 32px;
+    img {
+        max-width: 619px;
+        object-fit: cover;
+        font-family: "object-fit: cover;";
+        object-position: bottom;
     }
 }
 
@@ -115,6 +128,9 @@
         }
         .faq-links {
             font-size: 20px;
+        }
+        .logs {
+            display: none;
         }
     }
 }

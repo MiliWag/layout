@@ -19,13 +19,17 @@
         margin-right: auto;
         margin-bottom: 50px;
     }
-    .component-outline {
-        width: 393.2px;
-        right: -120px;
+    .component-outline-box {
+        width: 320px;
+        right: 0px;
         bottom: -120px;
         position: absolute;
         overflow: hidden;
-        opacity: 0.2;
+        opacity: 0.3;
+        img {
+            width: 400px;
+            max-width: 400px;
+        }
     }
 }
 
@@ -42,6 +46,7 @@
     border-style: none;
     border-radius: 2px;
     box-shadow: 0 3px 8px 0 rgba(65, 8, 8, 0.4);
+    z-index: 1;
     .arrow-right-white {
         margin-left: 10px;
         max-width: 14px;
@@ -53,6 +58,14 @@
         background-color: $color-white;
         .arrow-right-white {
             filter: invert(11%) sepia(50%) saturate(672%) hue-rotate(191deg) brightness(93%) contrast(85%);
+        }
+    }
+}
+
+@media (max-width: 867px) {
+    .section-order {
+        .component-outline-box {
+            display: none;
         }
     }
 }

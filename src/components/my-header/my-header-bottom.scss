@@ -52,10 +52,9 @@
         .menu {
             display: none;
             position: absolute;
-            justify-content: right;
-            width: 30%;
+            width: 240px;
             margin-top: 40px;
-            margin-left: 60%;
+            margin-left: 65%;
             z-index: 1;
             background-color: $color-white;
         }
@@ -115,6 +114,30 @@
         }
         .change span {
             margin-left: 11px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .my-header-bottom {
+        .menu {
+            margin-left: 55%;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .my-header-bottom {
+        .menu {
+            margin-left: 45%;
+        }
+    }
+}
+
+@media (max-width:478px) {
+    .my-header-bottom {
+        .menu {
+            margin-left: 35%;
         }
     }
 }

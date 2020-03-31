@@ -1,6 +1,6 @@
 .my-footer-top {
-    background-color: $color-secondary;
     position: relative;
+    background-color: $color-secondary;
     border-top: solid 4px $color-primary;
     h3 {
         padding-top: 96px;
@@ -126,10 +126,10 @@
         }
     }
     .component-outline-box {
-        width: 290px;
+        max-width: 80px;
         height: 628px;
         opacity: 0.1;
-        right: -192px;
+        right: 0px;
         top: 74px;
         position: absolute;
         overflow: hidden;
@@ -150,6 +150,9 @@
                 padding: 32px;
                 line-height: 40px;
             }
+        }
+        .component-outline-box {
+            display: none;
         }
     }
 }
