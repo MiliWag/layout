@@ -59,27 +59,27 @@
     }
     .component {
         position: absolute;
-        bottom: 90px;
+        bottom: 80px;
         right: 100px;
     }
     .component-outline {
-        width: 452.8px;
-        height: 811px;
+        max-width: 452.8px;
+        max-height: 811px;
         opacity: 0.2;
         position: absolute;
-        top: -310px;
+        top: -288px;
         right: 80px;
     }
 }
 
-@media (max-width:1300px) {
+@media (max-width:1350px) {
     .section-intro {
         .component {
             width: 30%;
         }
         .component-outline {
-            width: 30%;
-            top: -208px;
+            max-width: 30%;
+            top: -192px;
         }
     }
 }
@@ -91,6 +91,10 @@
         }
         .component {
             width: 20%;
+        }
+        .component-outline {
+            max-width: 20%;
+            top: -120px;
         }
     }
 }
