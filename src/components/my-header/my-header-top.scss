@@ -25,6 +25,9 @@
     }
     li:last-child {
         margin-right: 0px;
+        span {
+            font-family: $font-family-secondary;
+        }
     }
     img {
         display: inline-block;
