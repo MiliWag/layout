@@ -20,7 +20,7 @@
         color: $color-secondary;
     }
     .button-primary {
-        display: inline-block;
+        display: block;
         max-width: 239px;
         height: 57px;
         padding: 16px;
@@ -38,7 +38,7 @@
         .arrow-right-white {
             margin-left: 10px;
             max-width: 14px;
-            display: inline-flex;
+            display: inline-block;
         }
         &:hover {
             text-decoration: none;
@@ -135,6 +135,16 @@
             justify-content: center;
             width: auto;
             height: auto;
+        }
+    }
+}
+
+@media (min-width:575px) {
+    .section-intro {
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            .arrow-right-white {
+                width: 80px;
+            }
         }
     }
 }

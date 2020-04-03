@@ -20,16 +20,28 @@
         color: $color-secondary;
         overflow: visible;
     }
+    .container {
+        max-width: 1248px;
+        padding: 0;
+        p {
+            padding: 10px;
+        }
+    }
     .row {
         margin-left: 0px;
         margin-right: 0px;
     }
     .col-sm {
         display: flex;
-        padding-inline-end: 0px;
+        position: relative;
         justify-content: space-between;
         max-width: 400px;
         max-height: 153px;
+        margin-right: 20px;
+        margin-bottom: 80px;
+        padding-inline-end: 0px;
+        border: solid 1px #e5e5e5;
+        background-color: #ffffff;
         .left-side {
             display: table-column;
             .romotop-logo,

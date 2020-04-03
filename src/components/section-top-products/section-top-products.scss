@@ -43,101 +43,98 @@
             height: 811px;
         }
     }
-}
-
-.button-primary {
-    display: inline-block;
-    width: 239px;
-    height: 57px;
-    padding: 16px;
-    color: $color-white;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    background-color: $color-primary;
-    background: linear-gradient(103deg, $color-primary, $color-gradient);
-    border-style: none;
-    border-radius: 2px;
-    box-shadow: 0 3px 8px 0 rgba(255, 77, 77, 0.4);
-    .arrow-right-white {
-        margin-left: 10px;
-        max-width: 14px;
-        display: inline-flex;
-    }
-    &:hover {
+    .button-primary {
+        display: inline-block;
+        width: 239px;
+        height: 57px;
+        padding: 16px;
+        color: $color-white;
+        font-weight: bold;
         text-decoration: none;
-        color: $color-white;
-        background: #eb1111;
+        text-align: center;
+        background-color: $color-primary;
+        background: linear-gradient(103deg, $color-primary, $color-gradient);
+        border-style: none;
+        border-radius: 2px;
+        box-shadow: 0 3px 8px 0 rgba(255, 77, 77, 0.4);
+        .arrow-right-white {
+            margin-left: 10px;
+            max-width: 14px;
+            display: inline-flex;
+        }
+        &:hover {
+            text-decoration: none;
+            color: $color-white;
+            background: #eb1111;
+            .signpost-item,
+            .signpost-item-last {
+                transform: translateY(-24px);
+            }
+        }
     }
-    &:visited {
-        text-decoration: underline;
-        color: $color-white;
+    .container {
+        max-width: 1248px;
+        padding: 0;
+        p {
+            padding: 10px;
+        }
     }
-}
-
-.container {
-    max-width: 1248px;
-    padding: 0;
-    p {
-        padding: 10px;
-    }
-}
-
-.col-sm {
-    text-align: center;
-    max-width: 295px;
-    height: 443.7px;
-    margin-right: 20px;
-    margin-bottom: 80px;
-    border: solid 1px #e5e5e5;
-    background-color: #ffffff;
-    position: relative;
-    .img-background {
-        display: flex;
-        justify-content: center;
-        width: 295px;
-        height: 182px;
-        margin-left: -16px;
-        margin-bottom: 16px;
-        background-image: linear-gradient(122deg, #f2f2f2, #d6d6d6);
-    }
-    .signpost-item {
-        position: absolute;
-        top: -40px;
-    }
-    .signpost-item-last {
-        position: absolute;
-        top: -60px;
-    }
-    .triangle-left {
-        width: 0;
-        height: 0;
-        border: 0 solid transparent;
-        border-right-width: 293px;
-        border-left-width: 0px;
-        border-bottom: 51px solid $color-white;
-        position: absolute;
-        top: 131px;
-    }
-    .rectangle {
-        width: 293px;
-        height: 16px;
-        background: $color-white;
-        position: absolute;
-        top: 181.5px;
-        overflow: hidden;
-    }
-    .img-background-tr {
-        display: flex;
-        justify-content: center;
-        width: 295px;
-        height: 182px;
-        margin-left: -16px;
-        margin-bottom: 16px;
-        background-image: linear-gradient(122deg, #f2f2f2, #d6d6d6);
+    .col-sm {
+        text-align: center;
+        max-width: 295px;
+        height: 443.7px;
+        margin-right: 20px;
+        margin-bottom: 80px;
+        border: solid 1px #e5e5e5;
+        background-color: #ffffff;
+        position: relative;
+        .img-background {
+            display: flex;
+            justify-content: center;
+            width: 295px;
+            height: 182px;
+            margin-left: -16px;
+            margin-bottom: 16px;
+            background-image: linear-gradient(122deg, #f2f2f2, #d6d6d6);
+        }
+        .signpost-item {
+            position: absolute;
+            top: -40px;
+        }
+        .signpost-item-last {
+            position: absolute;
+            top: -60px;
+        }
         .triangle-left {
-            transform: rotateX(180deg);
-            transform: rotateY(180deg);
+            width: 0;
+            height: 0;
+            border: 0 solid transparent;
+            border-right-width: 293px;
+            border-left-width: 0px;
+            border-bottom: 51px solid $color-white;
+            position: absolute;
+            top: 131px;
+        }
+        .rectangle {
+            width: 293px;
+            height: 16px;
+            background: $color-white;
+            position: absolute;
+            top: 181.5px;
+            overflow: hidden;
+        }
+        .img-background-tr {
+            display: flex;
+            justify-content: center;
+            width: 295px;
+            height: 182px;
+            margin-left: -16px;
+            margin-bottom: 16px;
+            background-image: linear-gradient(122deg, #f2f2f2, #d6d6d6);
+            .triangle-left {
+                transform: rotateX(180deg);
+                transform: rotateY(180deg);
+            }
         }
     }
 }
