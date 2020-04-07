@@ -103,3 +103,17 @@
         }
     }
 }
+
+.section-order {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .button-order {
+            .arrow-right-white {
+                width: 80px;
+                display: inline-block;
+            }
+            img {
+                display: inline-block;
+            }
+        }
+    }
+}

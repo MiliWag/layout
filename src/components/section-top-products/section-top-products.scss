@@ -146,3 +146,37 @@
         }
     }
 }
+
+.section-top-products {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .button-primary {
+            .arrow-right-white {
+                width: 80px;
+                display: inline-block;
+            }
+            img {
+                display: inline-block;
+            }
+        }
+        .signpost-item,
+        .signpost-item-last {
+            margin-left: -30%;
+        }
+        .triangle-left {
+            right: 0px;
+        }
+        .rectangle {
+            right: 0px;
+        }
+    }
+}
+
+@media (max-width:1230px) {
+    .section-top-products {
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            .col-sm {
+                width: 295px;
+            }
+        }
+    }
+}
