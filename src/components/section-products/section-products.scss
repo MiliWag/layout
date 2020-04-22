@@ -97,3 +97,18 @@
         font-size: $article-heading-font-size;
     }
 }
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .section-products {
+        .col-sm {
+            width: 400px;
+            .left-side {
+                display: block;
+            }
+            .sp-img-background {
+                display: inline-table;
+            }
+        }
+    }
+}

@@ -126,8 +126,10 @@
 @media (min-width:1200px) {
     .section-contact {
         @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            .row {
+                display: inline-block;
+            }
             .store-box {
-                position: absolute;
                 padding-bottom: 0;
                 height: 385px;
                 width: 576px;
