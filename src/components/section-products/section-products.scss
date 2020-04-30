@@ -21,7 +21,6 @@
         overflow: visible;
     }
     .container {
-        max-width: 1248px;
         padding: 0;
         p {
             padding: 10px;
@@ -30,8 +29,9 @@
     .row {
         margin-left: 0px;
         margin-right: 0px;
+        justify-content: center;
     }
-    .col-sm {
+    .col-sm-4 {
         display: flex;
         position: relative;
         justify-content: space-between;
@@ -101,13 +101,18 @@
 @media screen and (-ms-high-contrast: active),
 (-ms-high-contrast: none) {
     .section-products {
-        .col-sm {
-            width: 400px;
+        .col-sm-4 {
             .left-side {
-                display: block;
+                display: inline-table;
+                .find-more {
+                    display: inline-block;
+                }
             }
             .sp-img-background {
-                display: inline-table;
+                margin-right: -16px;
+                img {
+                    position: relative;
+                }
             }
         }
     }
