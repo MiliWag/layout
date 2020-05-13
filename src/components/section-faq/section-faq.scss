@@ -102,8 +102,7 @@
 @media (max-width:1160px) {
     .section-faq {
         .row {
-            display: flex;
-            flex-direction: column;
+            display: inline-table;
         }
         .col {
             margin-bottom: 32px;

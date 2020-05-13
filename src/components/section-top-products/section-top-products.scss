@@ -79,7 +79,7 @@
             padding: 10px;
         }
     }
-    .col-sm {
+    .col-sm-4 {
         text-align: center;
         max-width: 295px;
         height: 443.7px;
@@ -167,16 +167,6 @@
         }
         .rectangle {
             right: 0px;
-        }
-    }
-}
-
-@media (max-width:1230px) {
-    .section-top-products {
-        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-            .col-sm {
-                width: 295px;
-            }
         }
     }
 }

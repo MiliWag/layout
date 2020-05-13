@@ -92,6 +92,11 @@
 
 @media (max-width:767px) {
     .section-realisation {
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            .row {
+                display: inline-table;
+            }
+        }
         h2 {
             font-size: $base-subheading-font-size;
             line-height: 32px;

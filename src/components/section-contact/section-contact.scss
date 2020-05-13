@@ -5,6 +5,7 @@
     .container {
         display: flex;
         flex-flow: row;
+        flex-wrap: wrap;
         border-bottom: 1px solid #e5e5e5;
         padding-bottom: 64px;
         .col {
@@ -36,6 +37,7 @@
     }
     p:nth-child(3) {
         border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 32px;
     }
     h3 {
         font-size: $base-text-font-size;
@@ -96,6 +98,13 @@
 }
 
 @media (max-width:1250px) {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .section-contact {
+            .row {
+                display: inline-table;
+            }
+        }
+    }
     .section-contact {
         .row {
             flex-direction: column;
