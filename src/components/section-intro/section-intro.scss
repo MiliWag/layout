@@ -1,7 +1,10 @@
 .section-intro {
     margin-bottom: 72px;
+    .si-container {
+        margin-left: 14%;
+        margin-right: auto;
+    }
     h1 {
-        margin-left: 80px;
         margin-bottom: 16px;
         font-family: $font-family-primary;
         font-size: $hp-heading-font-size;
@@ -13,7 +16,6 @@
         }
     }
     p {
-        margin-left: 80px;
         margin-bottom: 32px;
         font-family: $font-family-secondary;
         font-size: 22px;
@@ -24,7 +26,6 @@
         max-width: 239px;
         height: 57px;
         padding: 16px;
-        margin-left: 80px;
         margin-bottom: 63px;
         color: $color-white;
         font-weight: bold;
@@ -72,13 +73,21 @@
     }
 }
 
-@media (max-width:1350px) {
+@media (max-width:1550px) {
+    .section-intro {
+        .si-container {
+            margin-left: 12%;
+        }
+    }
+}
+
+@media (max-width:1450px) {
     .section-intro {
         .component {
-            width: 30%;
+            width: 28%;
         }
         .component-outline {
-            max-width: 30%;
+            max-width: 28%;
             top: -192px;
         }
     }

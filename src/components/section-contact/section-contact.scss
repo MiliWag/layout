@@ -79,14 +79,6 @@
      left: 360px;
  }
  
- @media (max-width:1300px) {
-     .section-contact {
-         .store-img-decoration {
-             left: 320px;
-         }
-     }
- }
- 
  @media (max-width:1250px) {
      .section-contact {
          .row {
@@ -112,10 +104,14 @@
              max-width: 576px;
              width: auto;
          }
+         .store-img-decoration {
+             left: 320px;
+             top: 240px;
+         }
      }
  }
  
- @media (max-width:650px) {
+ @media (max-width:1150px) {
      .section-contact {
          .store-img-decoration {
              display: none;

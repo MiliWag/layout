@@ -147,6 +147,14 @@
     }
 }
 
+@media (max-width:1230px) {
+    .section-top-products {
+        .container {
+            padding-left: 32px;
+        }
+    }
+}
+
 .section-top-products {
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         .button-primary {
